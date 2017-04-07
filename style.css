@@ -1,8 +1,4 @@
-
-.container-fluid {
-/*    background-color: aqua;*/
+body {
+    padding: 30px;
 }
 
-.col-md-4 {
-/*    background: blue;*/
-}
