@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default"><!--для создания меню-->
+        <div class="container-fluid"><!--что бы на всю страницу растягивалась шапка-->
+            <div class="navbar-header"><!--говорит что блок не явл меню а лого сайта-->
+                <a href="#" class="navbar-brand">brand</a><!--задает определенные стили-->
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav"><!--говорим что используем навигацию-->
+                    <li class="active"><a href="#">Главная</a></li><!-- active выделяет первую кнопку-->
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </nav>
+
+
+    <div class="container-fluid"><!--   container c фексированной шириной, container-fluid растенуть на весь экран-->
+        <h1>Заголовок</h1>
+        <div class="row"><!--row - создаем некий ряд-->
+            <div class="col-md-4">первый</div><!--col-md-4, col - основное слово,md - по стандарту под какой экран, 4 - 12/4=3 т.е три сетки-->
+            <div class="col-md-4">второй</div>
+            <div class="col-md-4">третий</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-6 col-lg-3">1</div>
+            <div class="col-xs-6 col-sm-9 col-md-6 col-lg-9">2</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">4</div>
+        </div>
+    </div>
+
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-xs-push-2">1111</div><!--    менять местами ячейки-->
+            <div class="col-xs-2 col-xs-pull-3">2222</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
