@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form role="form" class="form-horizontale">
+            <!--class="form-inline" в одну строку-->
+            <!--<form role="form" class="form-horizontale"> и <lable for="email" class="control-label"> можно разбивать с помощью системы сеток -->
+            <div class="form-group">
+                <!--все поля должны создаватся-->
+                <lable for="email" class="control-label col-md-2">email</lable>
+                <div class="col-md-10">
+                    <input type="email" class="form-control" id="email" placeholder="введите email">
+                    <!--                <p class="help-block">подсказка</p>-->
+                </div>
+            </div>
+            <div class="form-group">
+
+                <lable for="password" class="control-label col-md-2">пароль</lable>
+                <div class="col-md-10">
+                    <input type="password" class="form-control" id="password" placeholder="введите email">
+                    <!--                <p class="help-block">подсказка</p>-->
+                </div>
+            </div>
+            <div class="checkbox">
+
+                <lable for="password">
+                    <input type="checkbox">checkbox
+                </lable>
+            </div>
+            
+            <select class="form-control input-xs"><!--input-xs размер иконки-->
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+            
+            <button type="button" class="btn btn-success">регистрация</button>
+
+            <div class="form-group has-error"><!--   has-success - успешно        has-error сигнализирует о ошибке-->
+                <lable for="pass" class="col-sm-2 control-label">pass</lable>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
